@@ -14,6 +14,7 @@ pipeline {
                     ls -la
                     node --version
                     npm --version
+                    export NODE_OPTIONS="--max-old-space-size=2048"
                     npm install
                     npm run build
                 '''
